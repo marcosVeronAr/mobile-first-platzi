@@ -458,10 +458,12 @@
  }
 
 .plan-card .basic-button {
+  background-color: transparent;
   border: 2px solid var(--secondary-blue);
 }
 
 .plan-card .recommended-button {
+  background-color: transparent;
   border: 2px solid var(--bitcoin-orange);
 }
  .plan-card .plan-card--ca span {
@@ -498,6 +500,14 @@
   top: -15px;
  }
 
+ .card-basic {
+  background-color: var(--soft-blue);
+ }
+
+ .card-recommended {
+  background-color: var(--soft-orange);
+ }
+
  .plans-container--card .recommended {
   background-color: var(--bitcoin-orange);
   color: var(--just-white);
@@ -529,7 +539,7 @@
 
  .vip-card .plan-card--ca {
   border: 2px solid #ffea00;
-  background-color: var(--warm-black);
+  background-color: transparent;
   color: var(--just-white);
  }
 
