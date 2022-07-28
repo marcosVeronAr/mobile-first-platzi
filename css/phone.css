@@ -134,6 +134,27 @@
      line-height: 1.6rem;
      color: #757575;
    }
+
+   /* scroll tablas */
+   .main-tables-container{
+    display: flex;
+    width: 280px;
+    margin: 0 auto;
+    align-items: baseline;
+    overflow-x: scroll; /*Trabajmos con el Overflow que genera horizontalmente*/
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+   .main-tables-container::-webkit-scrollbar {
+    width: 12px;
+  }
+   .main-tables-container::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+    border: 2px solid white;
+    border-radius: 8px;
+   }
+
    .main-currency-table,
    .main-commissions-table {
      width: 70%;
@@ -141,8 +162,9 @@
      max-width: 500px;
      height: 360px;
      margin: 0 auto;
-   
      font-family: "Inter", sans-serif;
+     padding-left: 5rem;
+     padding-right: 2.5rem;
    }
    .main-currency-table .currency-table--title {
      margin-bottom: 15px;
@@ -160,7 +182,7 @@
    }
    .currency-table--container,
    .commissions-table--container {
-     width: 90%;
+     width: 80%;
      min-width: 230px;
      max-width: 300px;
      height: 250px;
